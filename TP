@@ -1,0 +1,23 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Prison Life", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Teleport to Location",
+	Callback = function()
+		local player = game.Players.LocalPlayer
+		if player and player.Character then
+			player.Character:SetPrimaryPartCFrame(CFrame.new(
+				-13.0227718, 3, -7.60455322,
+				-0.0166711323, -5.95964984e-08, 0.999861002,
+				-4.80298246e-09, 1, 5.95246981e-08,
+				-0.999861002, -3.80997101e-09, -0.0166711323
+			))
+		end
+	end    
+})
