@@ -1,0 +1,68 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "New Position Fisch By โอ๊ตเด็กวัด", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "เมนู",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Desolate Deep",
+	Callback = function()
+		local player = game.Players.LocalPlayer
+		if player and player.Character then
+			player.Character:SetPrimaryPartCFrame(CFrame.new(
+				-991.991638, -244.909515, -2722.98218, -0.135553822, 1.2234932e-07, -0.990769982, 2.79251182e-08, 1, 1.19668499e-07, 0.990769982, -1.14458469e-08, -0.135553822
+			))
+		end
+	end    
+})
+
+Tab:AddButton({
+	Name = "Desolate Pocket",
+	Callback = function()
+		local player = game.Players.LocalPlayer
+		if player and player.Character then
+			player.Character:SetPrimaryPartCFrame(CFrame.new(
+				-1659.13623, -214.182098, -2844.81494, 0.43358615, -4.62161402e-08, 0.901112139, 4.88109997e-08, 1, 2.78016099e-08, -0.901112139, 3.19297904e-08, 0.43358615
+			))
+		end
+	end    
+})
+
+Tab:AddButton({
+	Name = "Brine Pool",
+	Callback = function()
+		local player = game.Players.LocalPlayer
+		if player and player.Character then
+			player.Character:SetPrimaryPartCFrame(CFrame.new(
+				-1797.76855, -142.692841, -3409.51904, 0.978458285, -2.77742345e-08, 0.206444532, 2.23440786e-08, 1, 2.86347372e-08, -0.206444532, -2.34050841e-08, 0.978458285
+			))
+		end
+	end    
+})
+
+Tab:AddButton({
+	Name = "แท่นอันเชิญ Trident Temple",
+	Callback = function()
+		local player = game.Players.LocalPlayer
+		if player and player.Character then
+			player.Character:SetPrimaryPartCFrame(CFrame.new(
+				-1474.22925, -225.710724, -2375.21167, -0.98851949, -2.13547313e-08, 0.151093304, -2.49403751e-08, 1, -2.1836275e-08, -0.151093304, -2.53539074e-08, -0.98851949
+			))
+		end
+	end    
+})
+
+Tab:AddButton({
+	Name = "Trident Rod",
+	Callback = function()
+		local player = game.Players.LocalPlayer
+		if player and player.Character then
+			player.Character:SetPrimaryPartCFrame(CFrame.new(
+				-1484.31189, -225.779572, -2203.52075, -0.998524547, 2.88768426e-10, 0.0543024652, -1.47051082e-09, 1, -3.23578213e-08, -0.0543024652, -3.23899307e-08, -0.998524547
+			))
+		end
+	end    
+})
