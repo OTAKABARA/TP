@@ -66,3 +66,15 @@ Tab:AddButton({
 		end
 	end    
 })
+
+Tab:AddButton({
+	Name = "ที่ใหม่ใต้ทะเล",
+	Callback = function()
+		local player = game.Players.LocalPlayer
+		if player and player.Character then
+			player.Character:SetPrimaryPartCFrame(CFrame.new(
+				565.633423, -704.502686, 1220.1239, 0.138938993, -5.06017237e-08, -0.990300953, 3.84423231e-08, 1, -4.57038709e-08, 0.990300953, -3.171942e-08, 0.138938993
+			))
+		end
+	end    
+})
