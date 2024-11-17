@@ -78,3 +78,15 @@ Tab:AddButton({
 		end
 	end    
 })
+
+Tab:AddButton({
+	Name = "เบ็ดใหม่750,000",
+	Callback = function()
+		local player = game.Players.LocalPlayer
+		if player and player.Character then
+			player.Character:SetPrimaryPartCFrame(CFrame.new(
+				1700.65833, -902.527039, 1434.81433, -0.947934628, 1.25025466e-08, -0.318464965, -1.47293899e-09, 1, 4.36430945e-08, 0.318464965, 4.18398791e-08, -0.947934628
+			))
+		end
+	end    
+})
