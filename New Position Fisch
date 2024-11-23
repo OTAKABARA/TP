@@ -114,3 +114,15 @@ Tab:AddButton({
 		end
 	end    
 })
+
+Tab:AddButton({
+	Name = "เรือDr.",
+	Callback = function()
+		local player = game.Players.LocalPlayer
+		if player and player.Character then
+			player.Character:SetPrimaryPartCFrame(CFrame.new(
+				1173.79626, 132.262711, 2455.37476, -0.2399593, 1.93443639e-09, 0.970782936, -2.7433793e-09, 1, -2.67076783e-09, -0.970782936, -3.30410144e-09, -0.2399593
+			))
+		end
+	end    
+})
