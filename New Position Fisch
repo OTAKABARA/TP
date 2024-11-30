@@ -126,3 +126,15 @@ Tab:AddButton({
 		end
 	end    
 })
+
+Tab:AddButton({
+	Name = "ที่เอ็นชาร์จเบ็ต.",
+	Callback = function()
+		local player = game.Players.LocalPlayer
+		if player and player.Character then
+			player.Character:SetPrimaryPartCFrame(CFrame.new(
+				-3159.93311, -747.221069, 1693.83813, 0.160052434, -1.08806773e-07, -0.987108529, 5.1669435e-08, 1, -1.01849956e-07, 0.987108529, -3.47020084e-08, 0.160052434
+			))
+		end
+	end    
+})
